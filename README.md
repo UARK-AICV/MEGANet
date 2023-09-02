@@ -27,7 +27,7 @@ Extensive experiments, both qualitative and quantitative, on five benchmark data
 <ul>
 </li>
   <li>Both <a href="https://drive.google.com/file/d/1YiGHLw4iTvKdvbT6MgwO9zcCv8zJ_Bnb/view">training</a> and <a href="https://drive.google.com/file/d/1Y2z7FD5p5y31vkZwQQomXFRB0HutHyao/view">testing</a> datasets are the same as 
-  <a href="https://github.com/DengPingFan/PraNet">PraNet</a>. Downloading and moving it into the <code>data</code> folder.</li>
+  <a href="https://github.com/DengPingFan/PraNet">PraNet</a>.
   <li>The MEGANet-ResNet version weights can be downloaded at <a href="https://drive.google.com/file/d/1qYL16oPEDvDl0s1lwSwdkMdThZnNBltW/view?usp=drive_link">Google Drive</a></li>
   <li>The MEGANet-Res2Net version weights can be downloaded at <a href="https://drive.google.com/file/d/12tPJwRpaBIGqbijMQIc5Y35uO0fX3J0d/view?usp=drive_link">Google Drive</a></li>
   <li>The Res2Net weights can be downloaded at <a href="https://drive.google.com/file/d/1Y_jNFU7uAcosb63o1fOt2IsLCh_KcfyG/view?usp=drive_link">Google Drive</a></li>
@@ -52,4 +52,7 @@ Extensive experiments, both qualitative and quantitative, on five benchmark data
 ## Citation
 
 ## Acknowledgment
-Par code is  these excellent works PraNet, EAGRNet and MSEG, which have provided the basis for our framework.
+A part of this code is adapted from these previous works: [PraNet](https://github.com/DengPingFan/PraNet), [CCBANet](https://github.com/ntcongvn/CCBANet) and [UACANet](https://github.com/plemeri/UACANet).
+
+## FAQ
+If you have any questions, please create an issue on this repository or contact us at <tanb@uark.edu> / <hieu.hoang2020@ict.jvn.edu.vn>
