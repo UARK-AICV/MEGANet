@@ -37,15 +37,21 @@ Extensive experiments, both qualitative and quantitative, on five benchmark data
 
 ### Training
 
-```python train.py --trainsize "training size" --train_path "path to train dataset" --train_save "path to save checkpoint"```
+```
+python train.py --trainsize "training size" --train_path "path to train dataset" --train_save "path to save checkpoint"
+```
 
 ### Testing
 
-```python test.py --testsize "testing size" --pth_path "path to checkpoint"```
+```
+python test.py --testsize "testing size" --pth_path "path to checkpoint"
+```
 
 ### Evaluating
 
-```python predict_score.py```
+```
+python predict_score.py
+```
 
 ## Predictions
 
