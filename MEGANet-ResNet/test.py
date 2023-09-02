@@ -37,4 +37,4 @@ for _data_name in ['CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-Lar
         res = F.upsample(res, size=gt.shape, mode='bilinear', align_corners=False)
         res = res.data.cpu().numpy().squeeze()
         res = (res - res.min()) / (res.max() - res.min() + 1e-8)
-        # imageio.imwrite(save_path+name, ((res>.5)*255).astype(np.uint8))
+        imageio.imwrite(save_path+name, ((res>.5)*255).astype(np.uint8))
