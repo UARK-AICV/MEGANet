@@ -12,10 +12,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--testsize', type=int, default=352, help='testing size')
 parser.add_argument('--pth_path', type=str, default='checkpoints/eganet/EGANet.pth')
 
-# for _data_name in ['CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-LaribPolypDB']:
-for _data_name in ['Visualize-Data']:
-    data_path = '/home/bntan/data/TestDataset/{}'.format(_data_name)
-    save_path = 'results/mask/{}/'.format(_data_name)
+for _data_name in ['CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-LaribPolypDB']:
+    data_path = './data/TestDataset/{}'.format(_data_name)
+    save_path = './results/MEGANet-Res2Net/{}/'.format(_data_name)
     opt = parser.parse_args()
     model = EGANetModel()
     model.load_state_dict(torch.load(opt.pth_path))
@@ -39,5 +38,4 @@ for _data_name in ['Visualize-Data']:
         res = F.upsample(res, size=gt.shape, mode='bilinear', align_corners=False)
         res = res.data.cpu().numpy().squeeze()
         res = (res - res.min()) / (res.max() - res.min() + 1e-8)
-        # plt.imsave(save_path+name, ((mask.data.cpu().numpy().squeeze())*255).astype(np.uint8), cmap='jet')
-        # imageio.imwrite(save_path+name, ((res>.5)*255).astype(np.uint8))
+        imageio.imwrite(save_path+name, ((res>.5)*255).astype(np.uint8))
