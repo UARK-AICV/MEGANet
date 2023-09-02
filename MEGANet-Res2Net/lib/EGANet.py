@@ -3,10 +3,8 @@ import torch.nn.functional as F
 import torch.nn as nn
 from lib.modules import *
 import torchvision.models as models
-import imageio 
 from torchvision.transforms.functional import rgb_to_grayscale
 from lib.res2net import res2net50_v1b_26w_4s
-import matplotlib.pyplot as plt
 
 class Conv(nn.Module):
 
