@@ -3,7 +3,6 @@ import torch.nn.functional as F
 import torch.nn as nn
 from lib.modules import *
 import torchvision.models as models
-import imageio 
 from torchvision.transforms.functional import rgb_to_grayscale
 
 class Conv(nn.Module):
