@@ -78,7 +78,7 @@ if __name__ == '__main__':
     parser.add_argument('--trainsize', type=int,
                         default=352, help='training dataset size')
     parser.add_argument('--train_path', type=str,
-                        default='/home/bntan/data/TrainDataset', help='path to train dataset')
+                        default='./data/TrainDataset', help='path to train dataset')
     parser.add_argument('--train_save', type=str,
                         default='eganet1')
     parser.add_argument("--mgpu", type=str, default="false", choices=["true", "false"])
