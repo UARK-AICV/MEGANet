@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--testsize', type=int, default=352, help='testing size')
-parser.add_argument('--pth_path', type=str, default='checkpoints/eganet/EGANet.pth')
+parser.add_argument('--pth_path', type=str, default='./checkpoints/MEGANet-Res2Net.pth')
 
 for _data_name in ['CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-LaribPolypDB']:
     data_path = './data/TestDataset/{}'.format(_data_name)
