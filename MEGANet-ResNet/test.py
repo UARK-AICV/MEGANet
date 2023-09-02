@@ -10,12 +10,11 @@ from utils.dataloader import test_dataset
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--testsize', type=int, default=352, help='testing size')
-parser.add_argument('--pth_path', type=str, default='checkpoints/EGANet-189.pth')
+parser.add_argument('--pth_path', type=str, default='./checkpoints/MEGANet-ResNet.pth')
 
-# for _data_name in ['CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-LaribPolypDB']:
-for _data_name in ['Visualize-Data']:
-    data_path = '/home/bntan/data/TestDataset/{}'.format(_data_name)
-    save_path = 'results/ega-s/{}/'.format(_data_name)
+for _data_name in ['CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-LaribPolypDB']:
+    data_path = './data/TestDataset/{}'.format(_data_name)
+    save_path = './results/MEGANet-ResNet/{}/'.format(_data_name)
     opt = parser.parse_args()
     model = EGANetModel()
     model.load_state_dict(torch.load(opt.pth_path))
@@ -38,4 +37,4 @@ for _data_name in ['Visualize-Data']:
         res = F.upsample(res, size=gt.shape, mode='bilinear', align_corners=False)
         res = res.data.cpu().numpy().squeeze()
         res = (res - res.min()) / (res.max() - res.min() + 1e-8)
-        # imageio.imwrite(save_path+name, ((res)*255).astype(np.uint8))
+        # imageio.imwrite(save_path+name, ((res>.5)*255).astype(np.uint8))
