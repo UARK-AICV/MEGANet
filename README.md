@@ -64,4 +64,4 @@ python predict_score.py
 A part of this code is adapted from these previous works: [PraNet](https://github.com/DengPingFan/PraNet), [CCBANet](https://github.com/ntcongvn/CCBANet) and [UACANet](https://github.com/plemeri/UACANet).
 
 ## FAQ
-If you have any questions, please create an issue on this repository or contact us at <tanb@uark.edu> / <hieu.hoang2020@ict.jvn.edu.vn>
+If you have any questions, please feel free to create an issue on this repository or contact us at <tanb@uark.edu> / <hieu.hoang2020@ict.jvn.edu.vn>.
