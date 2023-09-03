@@ -80,7 +80,7 @@ if __name__ == '__main__':
     parser.add_argument('--train_path', type=str,
                         default='./data/TrainDataset', help='path to train dataset')
     parser.add_argument('--train_save', type=str,
-                        default='eganet1')
+                        default='MEGANet-Res2Net')
     parser.add_argument("--mgpu", type=str, default="false", choices=["true", "false"])
     opt = parser.parse_args()
 
