@@ -190,27 +190,3 @@ class test_dataset:
         with open(path, 'rb') as f:
             img = Image.open(f)
             return img.convert('L')
-
-
-class score_dataset:
-    def __init__(self, result_root, gt_root):
-        self.img_list = [os.path.splitext(f)[0] for f in os.listdir(gt_root) if f.endswith('.png')]
-        self.result_root = result_root
-        self.gt_root = gt_root
-        self.transform = transforms.Compose([
-            transforms.ToTensor(),
-        ])
-        self.gt_transform = transforms.ToTensor()
-        self.size = len(self.img_list)
-        self.index = 0
-
-    def load_data(self):
-        result = self.binary_loader(os.path.join(self.result_root,self.img_list[self.index]+ '.png'))
-        gt = self.binary_loader(os.path.join(self.gt_root,self.img_list[self.index] + '.png'))
-        self.index += 1
-        return result, gt
-
-    def binary_loader(self, path):
-        with open(path, 'rb') as f:
-            img = Image.open(f)
-            return img.convert('L')
