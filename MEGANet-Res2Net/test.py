@@ -34,7 +34,6 @@ for _data_name in ['CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-Lar
 
         predicts= model(image)
         res = predicts[0]
-        mask = predicts[5]
         res = F.upsample(res, size=gt.shape, mode='bilinear', align_corners=False)
         res = res.data.cpu().numpy().squeeze()
         res = (res - res.min()) / (res.max() - res.min() + 1e-8)
