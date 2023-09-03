@@ -11,7 +11,7 @@ Extensive experiments, both qualitative and quantitative, on five benchmark data
 
 <image src="Images/EGA.png">
 
-**Note that our model has been renamed. This means EGANet in the code file is now MEGANet in the paper.**
+### Note that our model has been renamed. This means EGANet in the code file is now MEGANet in the paper.
 
 ## Prerequisites
 <ul>
