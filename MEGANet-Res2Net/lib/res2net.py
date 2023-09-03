@@ -192,7 +192,7 @@ def res2net50_v1b_26w_4s(pretrained=False, **kwargs):
     """
     model = Res2Net(Bottle2neck, [3, 4, 6, 3], baseWidth=26, scale=4, **kwargs)
     if pretrained:
-        model_state = torch.load('checkpoints/res2net50_v1b_26w_4s-3cf99910.pth')
+        model_state = torch.load('./checkpoints/res2net50_v1b_26w_4s-3cf99910.pth')
         model.load_state_dict(model_state)
     return model
 
