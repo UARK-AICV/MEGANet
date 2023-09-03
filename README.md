@@ -54,8 +54,8 @@ python predict_score.py
 
 ## Predictions
 <ul>
-  <li>The pre-computed maps of the MEGANet-ResNet version can be downloaded at <a href="https://drive.google.com/file/d/14ZSCxgy-iQXmLb_vE34e-fEHEzhCUZr1/view?usp=drive_link">Google Drive</a>.</li>
-  <li>The pre-computed maps of the MEGANet-Res2Net version can be downloaded at <a href="https://drive.google.com/file/d/1kW6ekfGYrEsylkoIx2F_uO6zoZuf-pWF/view?usp=drive_link">Google Drive</a>.</li>
+  <li>The pre-computed maps and scores of the MEGANet-ResNet version can be downloaded at <a href="https://drive.google.com/file/d/14ZSCxgy-iQXmLb_vE34e-fEHEzhCUZr1/view?usp=drive_link">Google Drive</a>.</li>
+  <li>The pre-computed maps and scores of the MEGANet-Res2Net version can be downloaded at <a href="https://drive.google.com/file/d/1kW6ekfGYrEsylkoIx2F_uO6zoZuf-pWF/view?usp=drive_link">Google Drive</a>.</li>
 </ul>
 
 ## Citation
