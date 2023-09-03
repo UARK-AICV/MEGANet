@@ -2,7 +2,6 @@ import torch
 import torch.nn.functional as F
 import torch.nn as nn
 import numpy as np 
-import cv2
 
 def gauss_kernel(channels=3, cuda=True):
     kernel = torch.tensor([[1., 4., 6., 4., 1],
