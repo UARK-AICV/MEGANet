@@ -13,7 +13,7 @@ from utils.eval_functions import *
 def evaluate(pred_path, gt_path, verbose = True):
     result_path = 'results'
 
-    method = 'ega-resnet34'
+    method = 'MEGANet-ResNet'
     Thresholds = np.linspace(1, 0, 256)
     headers = ['meanDic', 'meanIoU', 'wFm', 'Sm', 'meanEm', 'mae', 'maxEm', 'maxDic', 'maxIoU', 'meanSen', 'maxSen', 'meanSpe', 'maxSpe'] #['meanDic', 'meanIoU', 'wFm', 'Sm', 'meanEm', 'mae', 'maxEm', 'maxDic', 'maxIoU', 'meanSen', 'maxSen', 'meanSpe', 'maxSpe']
     results = []
@@ -156,6 +156,6 @@ def evaluate(pred_path, gt_path, verbose = True):
 
 
 if __name__ == "__main__":
-    dataset_path =  '/home/bntan/data/TestDataset/'
-    dataset_path_pre = 'results/eganet-s/'
+    dataset_path =  './data/TestDataset/'
+    dataset_path_pre = 'results/MEGANet-ResNet/'
     evaluate(dataset_path_pre, dataset_path)
