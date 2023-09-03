@@ -52,8 +52,8 @@ def train(train_loader, model, optimizer, epoch, criteria_loss):
         os.makedirs(save_path)
 
     if (epoch + 1) % 10 == 0: 
-        torch.save(model.state_dict(), save_path + 'EGANet-%d.pth' % epoch)
-        print('[Saving Snapshot:]', save_path + 'EGANet-%d.pth'% epoch)
+        torch.save(model.state_dict(), save_path + 'MEGANet-%d.pth' % epoch)
+        print('[Saving Snapshot:]', save_path + 'MEGANet-%d.pth'% epoch)
 
 
 if __name__ == '__main__':
@@ -80,7 +80,7 @@ if __name__ == '__main__':
     parser.add_argument('--train_path', type=str,
                         default='./data/TrainDataset', help='path to train dataset')
     parser.add_argument('--train_save', type=str,
-                        default='eganet')
+                        default='MEGANet-ResNet')
     parser.add_argument("--mgpu", type=str, default="false", choices=["true", "false"])
     opt = parser.parse_args()
 
