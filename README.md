@@ -59,6 +59,15 @@ python predict_score.py
 </ul>
 
 ## Citation
+```
+@article{meganet,
+      title={MEGANet: Multi-Scale Edge-Guided Attention Network for Weak Boundary Polyp Segmentation}, 
+      author={Nhat-Tan Bui and Dinh-Hieu Hoang and Quang-Thuc Nguyen and Minh-Triet Tran and Ngan Le},
+      journal={arXiv:2309.03329},
+      year={2023},
+}
+
+```
 
 ## Acknowledgment
 A part of this code is adapted from these previous works: [PraNet](https://github.com/DengPingFan/PraNet), [CCBANet](https://github.com/ntcongvn/CCBANet) and [UACANet](https://github.com/plemeri/UACANet).
