@@ -1,5 +1,7 @@
-# MEGANet: Multi-Scale Edge-Guided Attention Network for Weak Boundary Polyp Segmentation
+# MEGANet
 Authors: Nhat-Tan Bui, Dinh-Hieu Hoang, Quang-Thuc Nguyen, Minh-Triet Tran, Ngan Le
+
+This is the official implementation of <a href="https://arxiv.org/pdf/2309.03329v1.pdf">"MEGANet: Multi-Scale Edge-Guided Attention Network for Weak Boundary Polyp Segmentation"</a>.
 
 ## Introduction
 <image src="Images/architecture.png">
