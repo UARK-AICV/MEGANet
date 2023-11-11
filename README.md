@@ -1,5 +1,5 @@
+<h1 align="center">MEGANet:  Multi-Scale Edge-Guided Attention Network for Weak Boundary Polyp Segmentation (WACV 2024) </h1>
 <p align="center">
-  <h1 align="center">MEGANet:  Multi-Scale Edge-Guided Attention Network for Weak Boundary Polyp Segmentation (WACV 2024) </h1>
   <p align="center">
     <a href="https://tanbuinhat.github.io/"><strong>Nhat-Tan Bui</strong></a>
     ·
