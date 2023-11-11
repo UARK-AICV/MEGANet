@@ -1,7 +1,19 @@
-# MEGANet (WACV 2024)
-Authors: Nhat-Tan Bui, Dinh-Hieu Hoang, Quang-Thuc Nguyen, Minh-Triet Tran, Ngan Le
-
-This is the official implementation of <a href="https://arxiv.org/abs/2309.03329">"MEGANet: Multi-Scale Edge-Guided Attention Network for Weak Boundary Polyp Segmentation"</a>.
+<p align="center">
+  <h1 align="center">MEGANet:  Multi-Scale Edge-Guided Attention Network for Weak Boundary Polyp Segmentation (WACV 2024) </h1>
+  <p align="center">
+    <a href="https://tanbuinhat.github.io/"><strong>Nhat-Tan Bui</strong></a>
+    ·
+    <a href="https://dblp.org/pid/253/9950.html"><strong>Dinh-Hieu Hoang</strong></a>
+    ·
+    <a href="https://scholar.google.com/citations?hl=vi&user=vLJtIi4AAAAJ&view_op=list_works&sortby=pubdate"><strong>Quang-Thuc Nguyen</strong></a>
+    ·
+    <a href="https://www.fit.hcmus.edu.vn/~tmtriet/"><strong>Minh-Triet Tran</strong></a>
+    .
+    <a href="https://www.nganle.net/"><strong>Ngan Le</strong></a>
+  </p>
+  <h4 align="center"><a href="https://arxiv.org/abs/2309.03329">arXiv</a></h4>
+  <div align="center"></div>
+</p>
 
 ## Introduction
 <image src="Images/architecture.png">
