@@ -11,8 +11,11 @@
     .
     <a href="https://www.nganle.net/"><strong>Ngan Le</strong></a>
   </p>
-  <h4 align="center"><a href="https://arxiv.org/abs/2309.03329">arXiv</a></h4>
-  <div align="center"></div>
+  <p align="center">
+    <a href="https://arxiv.org/abs/2309.03329">arXiv</a>
+    .
+    <a href="https://openaccess.thecvf.com/content/WACV2024/html/Bui_MEGANet_Multi-Scale_Edge-Guided_Attention_Network_for_Weak_Boundary_Polyp_Segmentation_WACV_2024_paper.html">open access</a>
+  </p>
 </p>
 
 ## Introduction
@@ -74,11 +77,13 @@ python predict_score.py
 
 ## Citation
 ```
-@article{meganet,
-      title={MEGANet: Multi-Scale Edge-Guided Attention Network for Weak Boundary Polyp Segmentation}, 
-      author={Nhat-Tan Bui and Dinh-Hieu Hoang and Quang-Thuc Nguyen and Minh-Triet Tran and Ngan Le},
-      journal={arXiv:2309.03329},
-      year={2023}
+@InProceedings{Bui_2024_WACV,
+    author    = {Bui, Nhat-Tan and Hoang, Dinh-Hieu and Nguyen, Quang-Thuc and Tran, Minh-Triet and Le, Ngan},
+    title     = {MEGANet: Multi-Scale Edge-Guided Attention Network for Weak Boundary Polyp Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2024},
+    pages     = {7985-7994}
 }
 ```
 
